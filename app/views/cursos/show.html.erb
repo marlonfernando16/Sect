@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<ul class=" container list-group">
+  <li class="list-group-item"><strong>Nome:</strong> <%= @curso.nome %></li>
+  <li class="list-group-item"><strong>Matricula:</strong> <%= @curso.email %></li>
+  <li class="list-group-item"><strong>Curso:</strong> <%= @curso.titulo %></li>
+  <li class="list-group-item"><strong>Status:</strong> <%= @curso.carga_horaria %></li>
+  <li class="list-group-item"><strong>Status:</strong> <%= @curso.vagas %></li>
+  <li class="list-group-item"><strong>Status:</strong> <%= @curso.pre_requisitos %></li>
+</ul>
+
+<%= link_to 'Edit', edit_curso_path(@curso) %> |
+<%= link_to 'Back', cursos_path %>

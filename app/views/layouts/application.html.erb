@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sect</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="<%= home_index_path %>"><h1>Sect</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="active nav-item nav-link" id="menu-home" href="<%= home_index_path %>">Home</a>
+      <a class="nav-item nav-link teste" id="menu-cursos" href="<%= cursos_path %>">Cursos</a>
+      <a class="nav-item nav-link" id="menu-inscricoes" href="<%= inscricaos_path %>">Inscrições</a>
+    </div>
+  </div>
+</nav>
+    <%= yield %>
+  </body>
+
+  <script>
+      var current = location.pathname;
+      $('.nav-item').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+          }else
+          $this.removeClass('active');
+      })
+  </script>
+</html>

@@ -1,0 +1,11 @@
+<ul class="container list-group">
+  <li class="list-group-item"><strong>Nome:</strong> <%= @inscricao.nome %></li>
+  <li class="list-group-item"><strong>Matricula:</strong> <%= @inscricao.matricula %></li>
+  <li class="list-group-item"><strong>Curso:</strong> <%= @inscricao.curso.nome %></li>
+  <li class="list-group-item"><strong>Status:</strong> <%= @inscricao.status %></li>
+</ul>
+
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_inscricao_path(@inscricao) %> |
+<%= link_to 'Back', inscricaos_path %>
