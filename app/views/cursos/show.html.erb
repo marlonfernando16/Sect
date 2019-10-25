@@ -8,6 +8,9 @@
   <li class="list-group-item"><strong>Status:</strong> <%= @curso.vagas %></li>
   <li class="list-group-item"><strong>Status:</strong> <%= @curso.pre_requisitos %></li>
 </ul>
-
-<%= link_to 'Edit', edit_curso_path(@curso) %> |
-<%= link_to 'Back', cursos_path %>
+<p></p>
+<p></p>
+<div class="text-center">
+<%= link_to 'Edit', edit_curso_path(@curso), class:'btn btn-success' %> 
+<%= link_to 'Back', cursos_path, class:'btn btn-primary' %>
+<div>

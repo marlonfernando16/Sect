@@ -26,6 +26,7 @@
     <%= collection_select(:inscricao, :curso_id, @cursos, :id, :titulo) %>
   </div>
 
+
   <div class="actions form-group text-center">
     <%= form.submit 'Cadastrar', class:'btn btn-success' %>
     <%= link_to 'Voltar', inscricaos_path, class:'btn btn-secondary' %>

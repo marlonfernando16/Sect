@@ -12,3 +12,5 @@
 [2019-10-24 13:18:55.661] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"workspaceContains:package.json"}
 [2019-10-24 13:18:55.661] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/18/usr/share/code/resources/app/extensions/npm/dist/main
 [2019-10-24 13:18:55.764] [exthost] [info] eager extensions activated
+[2019-10-24 13:48:58.270] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2019-10-24 13:48:58.271] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/18/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
